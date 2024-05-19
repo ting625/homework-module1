@@ -20,6 +20,11 @@ header {
     background-size: 1500px;
 }
 
+#cliff header {
+    background: no-repeat lightgray url(images/forest_cliff.jpg);
+    background-size: 1500px;
+}
+
 .main-header {
     background-color:rgba(255, 255, 255, 0.8);
     width: 700px;
@@ -76,7 +81,7 @@ header {
 .main-content {
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
-    line-height: 1.5em;
+    line-height: 1;
 }
 
 .main-content h2,h1 {
@@ -260,8 +265,6 @@ input[type="submit"] {
 input:focus {
     background-color: gray;
 }
-
-
 
 .legend {
     text-transform: uppercase;
