@@ -73,13 +73,23 @@ header {
 
 /* Main */
 .main-content {
-font-family: Arial, Helvetica, sans-serif;
-padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
 }
 
 .main-content h2,h1 {
-color:#9ed034;
+    color:#9ed034;
+
 }
+
+Span:first-child {
+    font-weight: bold;
+}
+
+Span:first-child {
+    font-weight: bold;
+}
+
 
 /* Partner */ 
 section {
@@ -105,43 +115,6 @@ section #partners .partner{
 section #partners .partner img{
     width: 90px;
     height: 90px;
-}
-
-.caption {
-    text-transform: uppercase;
-    font-weight: 600;
-    height: 40px; 
-    padding-top: 15px;
-    color: #753a30; 
-}
-
-label {
-    display: block; 
-    margin: 15px 0 0 0; /* top, right, bottom, left */
-}
-
-input, textarea {
-    width: 300px;
-}
-
-input[type="radio"] { /* attribute selector */
-    width: 25px;
-}
-
-input[type="submit"] {
-    display: block; 
-    margin: 20px 0 10px 0;
-    width: 100px;
-    background-color: #b57f76; 
-    border: 0px;
-    color: #ffffff; 
-    padding: 5px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-input:focus {
-    background-color: gray;
 }
 
 /* Footer */
@@ -174,44 +147,44 @@ footer #disclaimer p{
 }
 
 footer #nondisclaimer .social .fa {
-padding: 15px;
-font-size: 15px;
-width: 15px;
-text-align: center;
-text-decoration: none;
-margin: 0 4px;
-border-radius: 50%;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
 }
 
 footer #nondisclaimer .social .fa:hover {
-opacity: 0.7;
+    opacity: 0.7;
 }
 
 footer #nondisclaimer .social .fa-facebook {
-background: #3B5998;
-color: white;
+    background: #3B5998;
+    color: white;
 }
 
 footer #nondisclaimer .social .fa-twitter {
-background: #55ACEE;
-color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 footer #nondisclaimer .social .fa-instagram {
-background: #125688;
-color: white;
+    background: #125688;
+    color: white;
 }
 
 /* Activities */
 table {
     width: 1000px;
-    margin: 4em auto 0 auto;
+    margin: 4em auto 4em auto;
 }
 
-Caption {
+caption {
     background: #852B1B;
-    height: 40px;
-    color: #fff;
+    height: 40px; 
+    color: #fff; 
     font-size: 1.3em;
     font-weight: bold;
     padding-top: 1em;
@@ -243,4 +216,57 @@ th:first-child {
 td:first-child {
     font-weight: bold;
     background: #BDE1FF;
+}
+
+/* Contact */
+label {
+    display: block; 
+    margin: 15px 15px 0 15px; /* top, right, bottom, left */
+}
+
+input, textarea {
+    width: 300px;
+    margin: 0 15px 0 15px;
+}
+
+input[type="radio"] { 
+    width: 20px;
+    margin: 0 0 0 15px;
+}
+
+input[type="submit"] {
+    display: block; 
+    margin: 20px 0 10px 0;
+    width: 100px;
+    background-color: #4977D1; 
+    border: 0px;
+    color: #ffffff; 
+    padding: 5px;
+    font-weight: bold;
+    margin: 15px 15px 0 320px;
+}
+
+input:focus {
+    background-color: gray;
+}
+
+.legend {
+    text-transform: uppercase;
+    color:#4977D1; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.commentbox textarea {
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.form {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.selectmenu select {
+    margin-right: 20px;
 }
