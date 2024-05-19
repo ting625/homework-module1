@@ -45,12 +45,13 @@ header {
     list-style-type: none;
     display: inline-block;
     float: left;
-    padding-left: 30px;
-    padding-right: 35px;  
+    padding-left: 25px;
+    padding-right: 25px;  
     border-left: 1px solid rgba(202,204,202,0.6);
     line-height: 100px; 
     text-decoration: uppercase;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .main-menu ul li a {
@@ -181,6 +182,10 @@ table {
     margin: 4em auto 4em auto;
 }
 
+table, caption, th, td {
+    border: 2px solid #852B1B;
+}
+
 caption {
     background: #852B1B;
     height: 40px; 
@@ -219,6 +224,7 @@ td:first-child {
 }
 
 /* Contact */
+
 label {
     display: block; 
     margin: 15px 15px 0 15px; /* top, right, bottom, left */
@@ -267,6 +273,7 @@ input:focus {
     margin-bottom: 40px;
 }
 
-.selectmenu select {
-    margin-right: 20px;
+.selectmenu .select {
+    padding-right: 100px;
 }
+
