@@ -307,6 +307,8 @@ table.cliff_class {
     width: 1500px;
     margin: 4em auto 4em auto;
     border: none;
+    border-collapse: separate;
+    border-spacing: 30px;
 }
 
 table.cliff_class th{
@@ -319,13 +321,13 @@ table.cliff_class th{
 }
 
 table.cliff_class td{
-    border: none
+    border: none;
 }
 
 .cliff_images{
     width:100%; 
     padding-bottom: 30px;
-    border: none
+    border: none;
 }
 
 
