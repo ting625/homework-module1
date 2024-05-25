@@ -301,7 +301,7 @@ fieldset{
     font-weight: 200;
 }
 
-/* cliff pages table */
+/* cliff pages table 
 
 table.cliff_class {
     width: 1200px;
@@ -323,12 +323,36 @@ table.cliff_class th{
 table.cliff_class td{
     border: none;
 }
+*/
 
-.cliff_images{
-    width:100%; 
-    padding-bottom: 30px;
-    border: none;
+.section_cliff{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.block_cliff {
+    display:inline-block; 
+    padding: 15px;
+}   
+
+.images_cliff {
+    margin: 0 0 1px 0;
+    width: 600px; 
+}
+
+
+h3 {
+    background-color: #852B1B;
+    color:#ffffff;
+    text-align:center;
+    margin: 0%;
+    padding: 10px 0px;
+    width:600px;
+}
+
+
+
 
 
 
