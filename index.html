@@ -36,16 +36,21 @@
         </div>
     </header>
 
-    <!--Main Content-->
+    <section id="timeofday">
+        <span>Your Current Local Time:</span>
+        <span id="clock"></span>
+    </section>
+
+<!--Main Content-->
     <main class="main-content">
         <h2>Introducing California's Greatest Cliffs</h2>
-        <h3>What is so unique about California cliffs?</h3>
+        <h4>What is so unique about California cliffs?</h4>
         <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
-        <h3>Where are these cliffs?</h3>
+        <h4>Where are these cliffs?</h4>
         <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.</p>
     </main>
 
-    <!--section-->
+<!--section-->
     <section>
         <ul id="partners">
             <li class="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li>
@@ -57,7 +62,7 @@
         </ul>
     </section>
 
-    <!--Footer-->
+<!--Footer-->
     <footer>
     <div id="nondisclaimer">
         <div class="copy">&copy; Copyright 2020 :: GreatCliffs.com</div>
@@ -71,7 +76,53 @@
         <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
     </div>
     </footer>
-
 </div>
+
+<!--JavaScript Codes-->
+<script>
+    //Create a time data function
+    function currentTime() {
+    //Declare variables
+    var d = new Date(); //Get current date
+    var hr = d.getHours(); //Get current hours
+    var min = d.getMinutes(); //Get current mintues
+    var sec = d.getSeconds(); //Get current seconds
+    var ampm //Declare empty variable to store AM or PM
+    
+
+    //Add 0 to single digits for seconds
+    if (sec <10) {
+        sec = "0" + sec;
+    }
+    //Add 0 to single digits for minutes
+    if (min <10) {
+        min = "0" + min;
+    }
+
+    //Determine AM or PM string
+    if (hr == 12) {
+        ampm = "PM" ; //Set to PM 
+    } else if (hr >12) {
+        hr -= 12; //Deduct 12 from hours grearer than 12 (military time)
+        ampm = "PM"; //Set to PM
+    } else {
+        ampm = "AM"; //Set to AM 
+    }
+
+    //Assemble time format to display
+    var time = hr + ":" + min + ":" + sec + " " + ampm;
+
+    //Display current local time and time zone on HTML elements
+    document.getElementById("clock").innerText = time; //adding time
+    }
+
+    //Initial run of time data function
+    currentTime(); //
+
+    //Run time data function every 1 second
+    setInterval(currentTime, 1000); //setting timer
+
+</script>
+
 </body>
 </html>

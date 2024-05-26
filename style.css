@@ -351,6 +351,31 @@ h3 {
     width:600px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
+#timeofday {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(253,187,45);
+    background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
+    opacity: 0.7;
+}
+
+#timeofday span {
+    font-weight: normal;
+    color: #3a3a3a;
+}
+
+#timeofday #clock {
+    color: #125688
+}
+
+
+
+
 
 
 
