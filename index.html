@@ -53,12 +53,14 @@
 <!--section-->
     <section>
         <ul id="partners">
+            <!--
             <li class="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li>
             <li class="partner"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
             <li class="partner"><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adenture"></li>
             <li class="partner"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></li>
             <li class="partner"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li>
             <li class="partner"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
+            -->
         </ul>
     </section>
 
@@ -109,8 +111,6 @@
         timeZone = 'N/A';
     }
 
-
-
     //Add 0 to single digits for seconds
     if (sec <10) {
         sec = "0" + sec;
@@ -142,8 +142,43 @@
 
     //Run time data function every 1 second
     setInterval(currentTime, 1000); //setting timer
-
 </script>
+
+
+<script>
+    //Convert from HTML to JavaScript section partners
+
+    var filesNames = [
+    "partner-bustour",
+    "partner-cabinrental",
+    "partner-campingadv",
+    "partner-collegetours",
+    "partner-rentalbike",
+    "partner-tourgroup"
+    ];
+
+    //type HTMLLiListElement
+    const listElement = document.createElement('ul');
+
+    //create for loop to create 6 images    
+    for(var i=0; i< filesNames.length; i++) {
+
+    //type HTMLULListElement
+    const imageListElement = document.createElement('li');
+    imageListElement.classList.add('partner');
+
+    const imageElement = document.createElement('img');
+    imageElement.src = 'images/partners/' + filesNames[i] + '.png';
+    imageListElement.appendChild(imageElement);
+
+    listElement.appendChild(imageListElement);
+    }
+    
+    //display our images
+    document.getElementById("partners").innerHTML = "";
+    document.getElementById("partners").appendChild(listElement);
+
+</script>    
 
 </body>
 </html>
