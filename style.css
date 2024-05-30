@@ -329,10 +329,11 @@ table.cliff_class td{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1500px;
 }
 
 .block_cliff {
-    display:inline-block; 
+    display:block;
     padding: 15px;
 }   
 
