@@ -374,6 +374,21 @@ h4 {
     color: #125688
 }
 
+.randomcode input{
+    width: 150px;
+    margin: 15px 15px 0 15px;
+    padding: 5px;
+}
+
+#codes {
+    background-color: #b3b3b3;
+    padding: 10px;
+    display:inline;
+}
+
+
+
+
 
 
 
