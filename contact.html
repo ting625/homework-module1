@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
 <!-- Container-->
 <div id="container">
 
@@ -94,7 +94,7 @@
 
     <!--Random Codes-->
     <div class="randomcode">
-        <input type="text" name="randomcode" placeholder="Enter characters">
+        <input id="codeentered" type="text" name="randomcode" placeholder="Enter characters">
         <p id="codes"></p>
     </div>
 
