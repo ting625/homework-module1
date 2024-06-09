@@ -391,6 +391,13 @@ h4 {
     font-size: 12px;
 }
 
+/* Activity Cell */
+.green {
+    color:white;
+    background-color: #9ed034;
+    cursor: pointer;
+}
+
 
 
 

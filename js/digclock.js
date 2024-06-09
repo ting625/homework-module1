@@ -1,3 +1,4 @@
+  
   //Create a time data function
   function currentTime() {
     //Declare variables

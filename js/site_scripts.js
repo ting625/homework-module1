@@ -1,3 +1,4 @@
+  
   //Convert from HTML to JavaScript section partners
 
   var filesNames = [

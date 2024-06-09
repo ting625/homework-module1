@@ -1,3 +1,4 @@
+
 /*------RANDOM CODES ----------*/
 //Create variables to store generated codes and the type of characters we want to show as codes
 var btnvalue; //for button boolean value
