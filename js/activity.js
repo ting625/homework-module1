@@ -6,3 +6,7 @@ $(document).ready(function(){
     $(this).toggleClass('green');
    })
  });
+
+ $(document).ready(function(){
+   $"td".click
+ });
