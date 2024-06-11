@@ -14,16 +14,27 @@ $(document).ready(function(){
     $("td").click(function () { //user select a table data cell 
       var content = $(this).text(); //get content of cell
 
+      // Get index
+      var index = $(this).index();
+      console.log("index is " + index);
+
+      // Get th location
+      var th_location = $('th')[index];
+      console.log(th_location);
+
+      // Convert it to text
+      var location = $(th_location).text();
+
       if (content != "Not Available") {
         $(this).toggleClass("tdhightlight");
 
         if ($(this).hasClass("tdhighlight")) {
             $('#displaySelected').css("visibility", "visible"); 
             $('#displaySelected').css("margin-top", "2em"); 
-            $('#result').append("<p>"+content+ "</P>"); 
+            $('#result').append("<p>"+content+ " at " + location + "</p>"); 
 
         } else { //if selected cell don't have class
-          $('#result p:contains('+content+')').remove();;
+          $('#result p:contains('+content+')').remove();
 
           if ($('#result').has('p').length == false) {
               $('#displaySelected').css("visibility", "hidden");
@@ -32,7 +43,12 @@ $(document).ready(function(){
           }
         }
       }
-      
+  });
+});
+/*
+  $(document).ready(function(){
+    $("td").click(function () { //user select a table data cell 
+      var content = $(this).text(); //get content of cell
+      document.getElementById('album').innerHTML = OutputList.join(" "); 
+*/
 
-    });
- });
