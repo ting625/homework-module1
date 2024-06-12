@@ -45,10 +45,8 @@ $(document).ready(function(){
       }
   });
 });
-/*
-  $(document).ready(function(){
-    $("td").click(function () { //user select a table data cell 
-      var content = $(this).text(); //get content of cell
-      document.getElementById('album').innerHTML = OutputList.join(" "); 
-*/
 
+
+$(document).ready(function(){
+  $(th).css("background-color", "#bdd5ed");
+  })

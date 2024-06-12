@@ -392,6 +392,7 @@ h4 {
 }
 
 /* Activity Cell */
+
 .tdhighlight {
     color:white;
     background-color: #9ed034;
@@ -426,6 +427,7 @@ h4 {
 #activities main #displaySelected #sendinfo input[type="email"] {
     width: 200px;
 }
+
 
 
 
