@@ -44,6 +44,7 @@ header {
 .main-menu {
     margin-left: 227px;
     font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .main-menu ul li {
