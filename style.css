@@ -80,7 +80,6 @@ header {
 /* Main */
 .main-content {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
     line-height: 1;
 }
 
@@ -100,12 +99,12 @@ Span:first-child {
 
 /* Partner */ 
 section {
-    width: 100%;
     background-color: #4288c3;
+    width:100%;
 }
 
 section #partners {
-    width: 1200px; 
+    width: 100%; 
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
@@ -120,8 +119,8 @@ section #partners .partner{
 }
 
 section #partners .partner img{
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    max-height: 90px;
 }
 
 /* Footer */
@@ -431,16 +430,22 @@ h4 {
 
 /* Navigation Hamburger*/
 
-.navbar {
+.container {
+    background-color:rgba(255, 255, 255, 0.8);
     font-weight: 400;
+    width:680px;
+}
+
+.container .logo {
+    width: 80px;
+    margin: 0 12em 0 -30px;
+    float: left;
 }
 
 #navbarContent .navbar-nav .nav-link {
     list-style-type: none;
-    display: inline-block;
-    float: left;
     padding-left: 25px;
-    padding-right: 25px;  
+    padding-right: 25px;
     border-left: 1px solid rgba(202,204,202,0.6);
     line-height: 100px; 
     text-decoration: uppercase;
@@ -465,3 +470,44 @@ h4 {
 .navbar li.active a {
     color: #fff !important;
 }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-1 {
+    flex:1;
+    line-height: 20px;
+    padding: 20px;
+    border-style: ridge;
+    margin: 30px;
+}
+
+.flex-2 {
+    flex:1;
+    line-height: 20px;
+    padding: 20px;
+    border-style: ridge;
+    margin: 30px;
+}
+
+H2 {
+    padding-top: 20px;
+    padding-left:50px;
+    text-align: center;
+}
+
+h4 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:599px) { 
+    .flex{
+        flex-direction: column; 
+    }
+  }
+  
