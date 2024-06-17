@@ -433,11 +433,9 @@ h4 {
 .container {
     background-color:rgba(255, 255, 255, 0.8);
     font-weight: 400;
-    width:680px;
 }
 
 .container .logo {
-    width: 80px;
     margin: 0 12em 0 -30px;
     float: left;
 }
@@ -448,7 +446,6 @@ h4 {
     padding-right: 25px;
     border-left: 1px solid rgba(202,204,202,0.6);
     line-height: 100px; 
-    text-decoration: uppercase;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -470,6 +467,8 @@ h4 {
 .navbar li.active a {
     color: #fff !important;
 }
+
+/*Main Content*/
 
 .flex {
     display: flex;
@@ -510,4 +509,3 @@ h4 {
         flex-direction: column; 
     }
   }
-  
