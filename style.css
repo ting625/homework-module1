@@ -1,7 +1,7 @@
 /* Desktop devices */
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 700px !important;
+        max-width: 700px;
     }
 }
 
@@ -489,8 +489,8 @@ h4 {
     color: #888;
 }
 
-.navbar {
-    padding: 0px !important;
+#container .navbar {
+    padding: 0px;
 }
 
 .navbar ul li.active {
@@ -498,12 +498,12 @@ h4 {
    border: none;
 }
 
-.navbar-nav li a:hover {
-    color: #9ed034 !important;
+#container .navbar-nav li a:hover {
+    color: #9ed034;
 }
 
-.navbar li.active a {
-    color: #fff !important;
+#container .navbar li.active a {
+    color: #fff;
 }
 
 /*Main Content*/
