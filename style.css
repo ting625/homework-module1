@@ -1,3 +1,27 @@
+/* Desktop devices */
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 700px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 700px !important;
+    }
+}
+
+@media  (max-width:768px){ 
+    .flex {
+        flex-direction: column !important;
+    }
+    #navbarContent .navbar-nav .nav-link {
+        line-height: 50px !important;
+    }
+}
+
+
+
 /* Header */
 header {
     width: 100%;
@@ -6,8 +30,11 @@ header {
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px; 
+    height: 40vh;
+    background: lightgrey url(images/cliff_ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #activities header {
@@ -435,8 +462,13 @@ h4 {
     font-weight: 400;
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-right: 15px;
+    padding-left: 0px !important;
+}
+
 .container .logo {
-    margin: 0 12em 0 -30px;
+    margin: 0 9.5em 0 0px;
     float: left;
 }
 
@@ -448,11 +480,17 @@ h4 {
     line-height: 100px; 
     font-size: 14px;
     text-transform: uppercase;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 #navbarContent .navbar-nav .nav-link a {
     text-decoration: none;
     color: #888;
+}
+
+.navbar {
+    padding: 0px !important;
 }
 
 .navbar ul li.active {
@@ -501,11 +539,3 @@ h4 {
     padding-bottom: 20px;
     text-align: center;
 }
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width:599px) { 
-    .flex{
-        flex-direction: column; 
-    }
-  }
