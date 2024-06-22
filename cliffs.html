@@ -6,9 +6,14 @@
     <title>Document</title>
 
 <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <!--Link to CSS-->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 
@@ -17,21 +22,60 @@
 <div id="container">
 
 <!--header-->
-    <header>
-        <div class="main-header">
-            <!--logo-->
-            <div class="logo">
-                <img src="images/logo.png" alt="Great Cliffs Logo" width="125"> 
+<header>
+    <!--deactive
+            <div class="main-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125"> 
+                </div>
+                
+    
+                <nav class="main-menu">
+                    <ul>
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="cliffs.html">Cliffs</a></li›>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            
-            <!--nav-->
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li class="active"><a href="cliffs.html">Cliffs</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    -->
+    
+    
+        <div class = "container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="logo">
+               <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="Great Cliffs Logo" width="100"> </a>
+            </div>
+    
+               <!-- Hamburger Menu -->
+               <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+               <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
+               data-target = "#navbarContent" 
+               aria-controls = "navbarContent" aria-expanded = "false" 
+               aria-label = "Toggle navigation">
+                        
+               <span class = "navbar-toggler-icon"></span>
+               </button>
+    
+               
+               <div id="navbarContent" class="collapse navbar-collapse">
+                  <ul class="navbar-nav">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="cliffs.html">Cliffs</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="activities.html">Activities</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+                  
+               </div>
             </nav>
         </div>
     </header>
@@ -39,8 +83,8 @@
     <!--Main Content-->
     <main class="main-content">
         <h2>California's Greatest Cliffs</h2>
-        <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.
-        <br><br>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
+        <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
+        <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
     
         
     <!--Table
@@ -68,7 +112,8 @@
    
 
     <div class="section_cliff">
-
+    
+    <div class="flex_1">
         <div class="block_cliff">
             <h3>West Cliff</h3>
             <img src="images/cliff-west-sea.jpg" alt="west cliff" class="images_cliff">
@@ -78,7 +123,9 @@
             <h3>North Cliff</h3>
             <img src="images/cliff-north-mountain.jpg" alt="north mountain" class="images_cliff">
         </div>
+    </div>
 
+    <div class="flex_2">
         <div class="block_cliff">
             <h3>East Cliff</h3>
             <img src="images/cliff-east-river.jpg" alt="east river" class="images_cliff">
@@ -88,6 +135,7 @@
             <h3>South Cliff</h3>
             <img src="images/cliff-south-canyon.jpg" alt="south canyon" class="images_cliff">
         </div>
+    </div>
 
     </div>
  
@@ -125,8 +173,13 @@
 
 </div>
 
-    <!--Partners-->
-    <script src="js/site_scripts.js"></script>
+<!--Partners-->
+<script src="js/site_scripts.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
