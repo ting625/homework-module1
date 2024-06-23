@@ -1,12 +1,14 @@
 /* Desktop devices */
 
+
 @media (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 700px;
     } 
+    .col-lg-2 {
+    max-width: 10%;
+    } 
 }
-
-
 
 @media  (max-width:992px){ 
     #navbarContent .navbar-nav .nav-link {
@@ -14,8 +16,10 @@
     }
     .section_cliff{
         flex-wrap: wrap;
+    }
+
 }
-}
+
 
 /* Header */
 header {
@@ -25,7 +29,7 @@ header {
 }
 
 #home header {
-    height: 40vh;
+    height: 50vh;
     background: lightgrey url(images/cliff_ocean.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,22 +37,28 @@ header {
 }
 
 #activities header {
-    background: no-repeat lightgray url(images/runfly.jpg);
-    background-size: 1500px;
+    height: 50vh;
+    background: lightgray url(images/runfly.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 #contact header {
-    background: no-repeat lightgray url(images/cliff_rock.jpg);
-    background-size: 1500px;
-}
-
-#cliff header {
-    background: no-repeat lightgray url(images/forest_cliff.jpg);
+    height: 50vh;
+    background:lightgray url(images/cliff_rock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
+#cliff header {
+    height: 50vh;
+    background: lightgray url(images/forest_cliff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
 .main-header {
     background-color:rgba(255, 255, 255, 0.8);
@@ -127,14 +137,15 @@ Span:first-child {
 
 
 /* Partner */ 
+
 section {
     background-color: #4288c3;
-    width:100%;
+    width: 100%;
 }
 
 section #partners {
     width: 100%; 
-    padding: 2em 0 2em 0;
+    padding: 1em 0 2em 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -143,13 +154,12 @@ section #partners .partner{
     display: inline-block;
     margin:0 0.75em;
     padding: 1.3em 1.5em;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;      
 }
 
 section #partners .partner img{
-    width: 100%;
-    max-height: 90px;
+    width: 75%;
 }
 
 
