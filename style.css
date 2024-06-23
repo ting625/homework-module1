@@ -17,7 +17,6 @@
     .section_cliff{
         flex-wrap: wrap;
     }
-
 }
 
 
@@ -273,6 +272,13 @@ table.activities_class td:first-child {
 }
 
 
+.contactinfo .phone, .email {
+    margin-left: 25%;
+    width:50%;
+}
+
+
+
 /* Contact */
 
 label {
@@ -325,6 +331,8 @@ input:focus {
 .form {
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 25%;
+    width:50%;
 }
 
 fieldset{
@@ -566,5 +574,5 @@ h4 {
 }
 
 .btn {
-    margin: 1% 28% !important; 
+    margin: 1% 25% !important; 
 }
