@@ -4,6 +4,7 @@
 $(document).ready(function(){
    $('td#cell').click(function(){
     $(this).toggleClass('tdhighlight');
+    $(myModal).modal('show');
    })
  });
 
