@@ -13,6 +13,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $("td").click(function () { //user select a table data cell 
       var content = $(this).text(); //get content of cell
+      console.log("content is "+ content);
 
       // Get index
       var index = $(this).index();
@@ -24,6 +25,7 @@ $(document).ready(function(){
 
       // Convert it to text
       var location = $(th_location).text();
+      console.log(location);
 
       if (content != "Not Available") {
         $(this).toggleClass("tdhightlight");

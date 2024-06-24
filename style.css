@@ -573,11 +573,13 @@ h4 {
     margin: 0 auto;
 }
 
-.btn{
-    margin: 1% 15%; 
+caption {
+    padding-bottom: 1.75rem;
+    text-align: left;
+    caption-side: top;
 }
 
-.randomcode {
-    margin: 2% auto;
-}
+
+
+
 
